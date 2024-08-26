@@ -1,0 +1,88 @@
+.custom-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-carousel .swiper-container {
+    width: 100%;
+    height: auto;
+}
+
+.custom-carousel .swiper-wrapper {
+    display: flex;
+}
+
+.custom-carousel .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    width: auto !important;
+}
+
+.custom-carousel .swiper-slide img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    
+}
+
+.custom-carousel .swiper-slide h3,
+.custom-carousel .swiper-slide p {
+    margin: 10px 0;
+    padding: 0;
+    color: #333;
+}
+
+.custom-carousel .swiper-slide a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.custom-carousel .swiper-slide a:hover {
+    text-decoration: underline;
+}
+
+
+/* Default navigation position */
+.custom-carousel .swiper-button-next,
+.custom-carousel .swiper-button-prev {
+    color: #000;
+    font-size: 24px;
+}
+
+.custom-carousel.top-left .swiper-button-next,
+.custom-carousel.top-left .swiper-button-prev {
+    top: 10px;
+    left: 10px;
+    bottom: auto;
+    right: auto;
+}
+
+.custom-carousel.top-right .swiper-button-next,
+.custom-carousel.top-right .swiper-button-prev {
+    top: 10px;
+    right: 10px;
+    bottom: auto;
+    left: auto;
+}
+
+.custom-carousel.bottom-left .swiper-button-next,
+.custom-carousel.bottom-left .swiper-button-prev {
+    bottom: 10px;
+    left: 10px;
+    top: auto;
+    right: auto;
+}
+
+.custom-carousel.bottom-right .swiper-button-next,
+.custom-carousel.bottom-right .swiper-button-prev {
+    bottom: 10px;
+    right: 10px;
+    top: auto;
+    left: auto;
+}
